@@ -25,7 +25,7 @@ const AnimatedRoutes = () => {
         <div className="header-container">
           <Navbar />
         </div>
-        <AnimatePresence inital = {false} mode="sync">
+        <AnimatePresence mode="sync">
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
             <Route path="Projects" element={<Projects />} />
