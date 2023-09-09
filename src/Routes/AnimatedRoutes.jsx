@@ -1,6 +1,6 @@
 import Navbar from "../Components/Navbar.js";
 import "../Styles/Navbar.css";
-import "../Styles/Styles.css";
+import "../Styles/Home.css";
 import { AnimatePresence } from "framer-motion";
 import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
@@ -25,13 +25,13 @@ const AnimatedRoutes = () => {
         <div className="header-container">
           <Navbar />
         </div>
-        <AnimatePresence inital={false} mode="sync">
+        <AnimatePresence inital = {false} mode="sync">
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
             <Route path="Projects" element={<Projects />} />
           </Routes>
         </AnimatePresence>
-        <div className="fixed bottom-10 right-10">
+        <div className="absolute bottom-10 right-10">
           <DarkModeButton />
         </div>
       </ThemeProvider>
