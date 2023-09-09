@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import "../Styles/Navbar.css";
-import { Link } from "react-router-dom";
+import HomeImg from "../Images/thumbs.png";
 
-export default function Projects() {
-  const variant = {
+
+function Home() {
+  let variant = {
     hidden: {
       opacity: 0.5,
     },
@@ -24,9 +25,11 @@ export default function Projects() {
       transition={{ duration: 0.3 }}
       className="project-container overflow-hidden h-screen w-screen absolute bg-primary-background1 dark:bg-primary-background2"
     >
-      <button>
-        <Link to="/">TO HOME</Link>
-      </button>
+      <section id="projects" className = "w-full flex justify-center">
+        PROJECTS
+      </section>
     </motion.div>
   );
 }
+
+export default Home;
