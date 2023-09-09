@@ -9,10 +9,15 @@ module.exports = {
         backgroundDark: "url(../SVGs/blob-dark.svg)", 
       },
       colors: {
-        primary1 : "#2D2727",
-        primary2 : "#413543",
-        accent1: "#8F43EE",
-        accent2 : "#F0EB8D"
+        primary: {
+          background1: "#FFFBE9",
+          background2 : "rgb(15 23 42)",
+        },
+        secondary:{
+          navbar1: "#FF8400",
+          navbar2: "#FFD369",
+          navbar3 : "#865DFF"
+        }
       },
       aspectRatio:{
         "7/10": "7 / 10",
